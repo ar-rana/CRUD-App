@@ -5,7 +5,11 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
-const mongodb = 'mongodb+srv://to-do_user:db.rana@cluster0.12z8wrh.mongodb.net/?retryWrites=true&w=majority';
+
+// Add your username and password heer to connect to your mongodb cloud DB
+const mongodb = 'mongodb+srv://USERNAME:PASSWORD@cluster0.12z8wrh.mongodb.net/?retryWrites=true&w=majority';
+                            //  ^HERE and ^HERE
+
 mongoose.connect(mongodb).then(()=>console.log("Database connected!")).catch(err=>console.log("Mongo Error", err))
 
 const indexFile = '/Views/index.html';

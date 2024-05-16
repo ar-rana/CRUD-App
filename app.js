@@ -6,9 +6,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 
-// Add your username and password here to connect to your mongodb cloud 
-const mongodb = 'mongodb+srv://USERNAME:PASSWORD@cluster0.12z8wrh.mongodb.net/?retryWrites=true&w=majority';
-                            //  ^HERE and ^HERE
+const mongodb = 'mongodb://localhost:27017/CRUD_DB';
+
 
 mongoose.connect(mongodb).then(()=>console.log("Database connected!")).catch(err=>console.log("Mongo Error", err))
 

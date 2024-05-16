@@ -1,3 +1,8 @@
+# About
+This is application made by express and ejs to perform CRUD operations on an Mongo database. 
+
+
+## To run on you local machine 💻
 To run this project first run the following command:
 
 `npm install`
